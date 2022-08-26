@@ -224,7 +224,7 @@ a:hover {
 }
 
 /*------/ Ul resect /------*/
-.ul-resect, .widget-tags ul, .widget-sidebar .list-sidebar, .box-comments .list-comments, .blog-wrapper .post-meta ul, .list-ico, .socials ul {
+.ul-resect,  .list-sidebar,   .list-ico, .socials ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -239,7 +239,7 @@ a:hover {
 }
 
 /*------/ Ico Circle /------*/
-.ico-circle {
+ .ico-circle {
   height: 100px;
   width: 100px;
   font-size: 2rem;
@@ -249,34 +249,7 @@ a:hover {
   text-align: center;
   box-shadow: 0 0 0 10px #0078ff;
   display: block;
-}
-
-/*------/ Owl Carousel /------*/
-.owl-theme .owl-dots {
-  text-align: center;
-  margin-top: 18px;
-}
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 18px;
-  height: 7px;
-  margin: 5px 5px;
-  background: #cde1f8;
-  border: 0px solid #cde1f8;
-  display: block;
-  transition: all 0.6s ease-in-out;
-  cursor: pointer;
-}
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #cde1f8;
-}
-.owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
-  width: 25px;
-}
-
+} 
 /*--/ Scrolltop s /--*/
 .scrolltop-mf {
   position: relative;
@@ -300,7 +273,69 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-
+/*--------------------------------------------------------------
+# education
+--------------------------------------------------------------*/
+.resume .section-title h1 {
+  color: white;
+}
+.resume .container {
+  padding: 30px;
+}
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #2e84f7;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .resume-h ul {
+  color: white;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+  color: white;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -780,67 +815,6 @@ a:hover {
     padding-left: 0rem;
   }
 }
-
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-.php-email-form input, .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-.php-email-form input:focus, .php-email-form textarea:focus {
-  border-color: #0078ff;
-}
-.php-email-form input {
-  padding: 10px 15px;
-}
-.php-email-form textarea {
-  padding: 12px 15px;
-  margin-bottom: 0;
-}
-.php-email-form button[type=submit] {
-  background: #0078ff;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-.php-email-form button[type=submit]:hover {
-  background: #3393ff;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -858,54 +832,6 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-
-/*------/ Sidebar /------*/
-.widget-sidebar .sidebar-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-left: 5px solid #0078ff;
-  padding-left: 15px;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.widget-sidebar .list-sidebar li {
-  position: relative;
-  padding: 6px 0 6px 24px;
-}
-.widget-sidebar .list-sidebar li:before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 1px;
-  left: 0;
-  background-color: #0078ff;
-  top: 20px;
-}
-
-.sidebar-search input {
-  background-color: #fff;
-  border-radius: 0;
-  transition: all 0.5s ease-in-out;
-}
-.sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
-  border-radius: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.widget-tags ul li {
-  display: inline-block;
-  background-color: #0078ff;
-  padding: 0.2rem 0.6rem;
-  margin-bottom: 0.5rem;
-  border-radius: 15px;
-}
-.widget-tags ul li a {
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

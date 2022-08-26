@@ -1,8 +1,3 @@
-<?php
-
-require 'config.php';
-
-?>
 
 
 <!DOCTYPE html>
@@ -17,18 +12,15 @@ require 'config.php';
   <meta content="" name="keywords">
 
   <!-- Favicon -->
-  <link href="an.jpg" rel="icon">
+  <link href="images/icon.jpg" rel="icon">
   
 
   <!--CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- MainCSS  -->
   <link href="assets/css/style.css" rel="stylesheet">
-    <link href="edustyle.css" rel="stylesheet">
 
   
 </head>
@@ -56,7 +48,7 @@ require 'config.php';
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(q.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(images/mainbg.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -83,7 +75,7 @@ require 'config.php';
                                   <div class="row">
                                       <div class="col-sm-6 col-md-5">
                                           <div class="about-img">
-                                              <img src="aan.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                              <img src="images/main.jpg" class="img-fluid rounded b-shadow-a" alt="">
                                           </div>
                                       </div>
                                       <div class="col-sm-6 col-md-7">
@@ -155,12 +147,10 @@ require 'config.php';
                                               <li>Desktop application development(C#)</li>
                                           </ol>
                                       </p>
-                                      <center>
-                                          <h3>Operating System</h3>
-                                          <h6> Windows & Linux </h6>
-                                      </center>
-
-                                  </div>
+                                        <h3 class="text-center">Operating System</h3>
+                                        <h6 class="text-center"> Windows & Linux </h6>
+                                       
+                                    </div>
                               </div>
                           </div>
                       </div>
@@ -283,7 +273,7 @@ require 'config.php';
           </div>
       </section><!-- End Services Section -->
       <!-- ======= Education Section ======= -->
-      <section id="resume" class="resume" style="background: url(w.webp)">
+      <section id="resume" class="resume" style="background: url(images/background.webp)">
           <div class="container" data-aos="fade-up">
 
               <div class="section-title text-center">
@@ -341,7 +331,7 @@ require 'config.php';
       <!-- ======= End Education Section ======= -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/work-3.jpg)">
+      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
           <div class="overlay-mf"></div>
           <div class="container">
               <div class="row">
@@ -356,7 +346,7 @@ require 'config.php';
                                           </h5>
                                       </div>
                                       <div>
-                                          <form action="snd_msg.php" method="post" role="form">
+                                          <form action="https://formspree.io/f/mlevdwvb" method="post" role="form">
                                               <div class="row">
                                                   <div class="col-md-12 mb-3">
                                                       <div class="form-group">
@@ -443,36 +433,9 @@ require 'config.php';
 
   <!-- VJS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- MJS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/sentalert.js"></script>
-
-
-  <?php 
-  if (isset($_SESSION['status']) && $_SESSION['status'] !='')
-  {
-    ?>
-
-    <script>
-  swal({
-  title: "<?php echo $_SESSION['status']   ?>",
- text: "<?php echo $_SESSION['text'] ?> ",
-  icon: "<?php echo $_SESSION['status_code']   ?>",
-  button: "<?php echo $_SESSION['button'] ?>",
-}); 
-
-
-    </script>
-
-    <?php 
-    unset($_SESSION['status']);
-   }
-    ?>
-
 </body>
 </html>
